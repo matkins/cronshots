@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+now = (Time.now.to_i.to_f/100).round * 100
+file = "~/Code/cronshots/shots/#{now}.jpg"
+system "~/Code/cronshots/bin/imagesnap -q -w 3 #{file}"
+exit 0
